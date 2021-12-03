@@ -54,6 +54,7 @@ a:hover {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  left: 0;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -149,8 +150,9 @@ a:hover {
   }
   .header .header__wrapper .nav__content {
     visibility: hidden;
-    height: 0;
-    width: 0;
+    position: absolute;
+    top: -100%;
+    left: -100%;
   }
   .header .header__wrapper .nav__content .email {
     -webkit-transform: translateX(-100%);
@@ -172,6 +174,10 @@ a:hover {
   }
   .header .header__wrapper .nav__content.active {
     visibility: visible;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     height: 100vh;
     width: 100vw;
     -webkit-box-orient: vertical;
