@@ -42,6 +42,7 @@
     .cooperation__wrapper {
       ul {
         flex-wrap: wrap;
+
         li {
           width: 40%;
           margin-bottom: 20px;
@@ -53,11 +54,25 @@
 
 @media screen and (max-width: 767px) {
   .cooperation {
+    margin-bottom: 60px;
+
     .cooperation__wrapper {
       ul {
         flex-wrap: wrap;
+
         li {
-          width: 100%;
+          justify-content: start;
+          width: 50%;
+
+          svg {
+            margin: 0 auto 8px auto;
+          }
+
+          span {
+            font-size: 12px;
+            line-height: 1.4;
+            text-align: center;
+          }
         }
       }
     }

@@ -522,6 +522,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 991px) {
+  .about-us {
+    padding: 50px 0;
+  }
   .about-us .about-us__wrapper .about-us__img {
     width: 100%;
     height: auto;
@@ -697,8 +700,12 @@ a:hover {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  color: #007dd8;
   margin-bottom: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1598f9), to(#007dd8));
+  background: -o-linear-gradient(#1598f9, #007dd8);
+  background: linear-gradient(#1598f9, #007dd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .services .services__wrapper ul li .text {
   color: #9F9F9F;
@@ -716,6 +723,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 600px) {
+  .services {
+    margin-bottom: 60px;
+  }
   .services .services__wrapper ul li {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
@@ -784,12 +794,27 @@ a:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  .cooperation {
+    margin-bottom: 60px;
+  }
   .cooperation .cooperation__wrapper ul {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
   .cooperation .cooperation__wrapper ul li {
-    width: 100%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 50%;
+  }
+  .cooperation .cooperation__wrapper ul li svg {
+    margin: 0 auto 8px auto;
+  }
+  .cooperation .cooperation__wrapper ul li span {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
   }
 }

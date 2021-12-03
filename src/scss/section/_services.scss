@@ -59,8 +59,10 @@
           font-weight: 700;
           font-size: 18px;
           line-height: 22px;
-          color: rgba(0, 125, 216, 1);
           margin-bottom: 20px;
+          background: linear-gradient(rgba(21, 152, 249, 1),rgba(0, 125, 216, 1));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
 
         .text {
@@ -88,6 +90,7 @@
 
 @media screen and (max-width: 600px) {
   .services {
+    margin-bottom: 60px;
     .services__wrapper {
       ul {
         li {
